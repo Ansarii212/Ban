@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>بنك الأسئلة - اللغة الإنجليزية</title>
+  <style>
+    body { font-family: "Tahoma", sans-serif; padding: 20px; background-color: #fdf6ec; color: #333; direction: rtl; }
+    .question { background: #fff; border: 1px solid #ccc; padding: 15px; border-radius: 10px; margin-bottom: 15px; box-shadow: 2px 2px 5px rgba(0,0,0,0.1); }
+    ul { list-style: none; padding-left: 0; }
+    li { margin: 5px 0; }
+    .difficulty { font-weight: bold; color: #6c63ff; margin-bottom: 8px; text-align: left; }
+    button { margin-top: 10px; padding: 5px 10px; cursor: pointer; background-color: #6c63ff; color: white; border: none; border-radius: 5px; }
+    button:hover { background-color: #4b47c4; }
+  </style>
+</head>
+<body>
+  <h1>بنك أسئلة اللغة الإنجليزية (1000 سؤال)</h1>
+
+  <!-- Example Question -->
+  <div class="question">
+    <p><strong>1. What is the capital of France?</strong></p>
+    <p class="difficulty">درجة الصعوبة: سهل</p>
+    <ul>
+      <li>Paris ✔️</li>
+      <li>London</li>
+      <li>Rome</li>
+      <li>Berlin</li>
+    </ul>
+    <button onclick="copyToClipboard(this)">نسخ</button>
+  </div>
+
+  <!-- Add more questions similarly -->
+
+  <script>
+    function copyToClipboard(button) {
+      const questionDiv = button.parentElement;
+      const text = questionDiv.innerText;
+      navigator.clipboard.writeText(text).then(() => {
+        button.textContent = "تم النسخ!";
+        setTimeout(() => button.textContent = "نسخ", 2000);
+      });
+    }
+  </script>
+</body>
+</html>
