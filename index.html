@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="en" dir="rtl">
 <head>
   <meta charset="UTF-8">
-  <title>بنك الأسئلة - اللغة الإنجليزية</title>
+  <title>English Question Bank</title>
   <style>
     body { font-family: "Tahoma", sans-serif; padding: 20px; background-color: #fdf6ec; color: #333; direction: rtl; }
     .question { background: #fff; border: 1px solid #ccc; padding: 15px; border-radius: 10px; margin-bottom: 15px; box-shadow: 2px 2px 5px rgba(0,0,0,0.1); }
@@ -14,43 +14,58 @@
   </style>
 </head>
 <body>
-  <h1 style="text-align: left;">بنك أسئلة اللغة الإنجليزية (1000 سؤال)</h1>
+  <h1 style="text-align: left;">English Question Bank (300 Questions)</h1>
 
-  <!-- Example Question, replace these with your questions -->
+  <!-- Start of Questions -->
+
+  <!-- Question 1 -->
   <div class="question">
     <p style="text-align: left;"><strong>1. What is the capital of France?</strong></p>
-    <p class="difficulty" style="text-align: left;">درجة الصعوبة: سهل</p>
+    <p class="difficulty" style="text-align: left;">Difficulty: Easy</p>
     <ul style="text-align: left;">
       <li>Paris ✔️</li>
       <li>London</li>
       <li>Rome</li>
       <li>Berlin</li>
     </ul>
-    <button onclick="copyToClipboard(this)" style="text-align: left;">نسخ</button>
+    <button onclick="copyToClipboard(this)" style="text-align: left;">Copy</button>
   </div>
 
-  <!-- Another Example Question -->
+  <!-- Question 2 -->
   <div class="question">
     <p style="text-align: left;"><strong>2. What is 2 + 2?</strong></p>
-    <p class="difficulty" style="text-align: left;">درجة الصعوبة: سهل</p>
+    <p class="difficulty" style="text-align: left;">Difficulty: Easy</p>
     <ul style="text-align: left;">
       <li>3</li>
       <li>4 ✔️</li>
       <li>5</li>
       <li>6</li>
     </ul>
-    <button onclick="copyToClipboard(this)" style="text-align: left;">نسخ</button>
+    <button onclick="copyToClipboard(this)" style="text-align: left;">Copy</button>
   </div>
 
-  <!-- Repeat this structure for 1000 questions -->
+  <!-- Example Question 3 -->
+  <div class="question">
+    <p style="text-align: left;"><strong>3. Who is the author of "Romeo and Juliet"?</strong></p>
+    <p class="difficulty" style="text-align: left;">Difficulty: Medium</p>
+    <ul style="text-align: left;">
+      <li>Shakespeare ✔️</li>
+      <li>Hemingway</li>
+      <li>Fitzgerald</li>
+      <li>Tolkien</li>
+    </ul>
+    <button onclick="copyToClipboard(this)" style="text-align: left;">Copy</button>
+  </div>
+
+  <!-- Add 300 questions, below is a sample, continue in the same structure -->
 
   <script>
     function copyToClipboard(button) {
       const questionDiv = button.parentElement;
       const text = questionDiv.innerText;
       navigator.clipboard.writeText(text).then(() => {
-        button.textContent = "تم النسخ!";
-        setTimeout(() => button.textContent = "نسخ", 2000);
+        button.textContent = "Copied!";
+        setTimeout(() => button.textContent = "Copy", 2000);
       });
     }
   </script>
